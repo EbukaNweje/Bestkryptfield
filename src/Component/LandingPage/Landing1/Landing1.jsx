@@ -113,4 +113,8 @@ width: 400px;
   flex-direction: column;
   align-items: flex-start;
   padding: 10px;
+
+  @media screen and (max-width: 960px){
+    font-size: 18px;
+  }
 `

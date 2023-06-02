@@ -29,6 +29,11 @@ export const CardHolder = styled.div`
     justify-content: center;
     /* gap: 20px; */
 
+
+@media screen and (max-width: 426px){
+    display: flex;
+    flex-wrap: wrap;
+}
 `
 export const Card1 = styled.div`
     width: 450px;
@@ -38,7 +43,9 @@ export const Card1 = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-top: 2px solid lightgrey;
     border-right: 2px solid lightgrey;
+    border-left: 2px solid lightgrey;
     border-bottom: 2px solid lightgrey;
     padding: 10px;
 `
@@ -51,6 +58,7 @@ export const Card2= styled.div`
     align-items: center;
     justify-content: center;
     border-right: 2px solid lightgrey;
+    border-left: 2px solid lightgrey;
     border-bottom: 2px solid lightgrey;
     padding: 10px;
 `
@@ -62,6 +70,8 @@ export const Card3 = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-right: 2px solid lightgrey;
+    border-left: 2px solid lightgrey;
     border-bottom: 2px solid lightgrey;
     padding: 10px;
 `

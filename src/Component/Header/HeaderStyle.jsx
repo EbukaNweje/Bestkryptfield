@@ -21,6 +21,8 @@ export const DownHeader = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+   
 `
 export const TopHeader = styled.div`
     width: 100%;
@@ -72,12 +74,21 @@ export const Image = styled.div`
     font-size: 25px;
     font-weight: bold;
     cursor: pointer;
+
+    @media screen and (max-width: 960px){
+        width: 100%;
+        
+    }
 `
 export const NavHold = styled.div`
     width: 80%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media screen and (max-width: 906px){
+        display: none;
+    }
 `
 export const CompanyHold=styled.div`
     display: flex;

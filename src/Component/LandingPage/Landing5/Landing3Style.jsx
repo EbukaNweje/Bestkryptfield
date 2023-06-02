@@ -9,6 +9,13 @@ export const Container = styled.div`
     flex-direction: column;
     margin-top: 50px;
 
+    @media screen and (max-width: 426px){
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        height: 100%;
+    }
+
    
 `
 export const Wrapper = styled.div`
@@ -23,9 +30,17 @@ export const Right = styled.div`
    width :50% ;
    padding: 10px;
    margin-left: 20px;
+
+   @media screen and (max-width: 426px){
+        width: 100%;
+    }
 `
 export const Left = styled.div`
     width: 50%;
+
+    @media screen and (max-width: 426px){
+        display: none;
+    }
 `
 export const Button = styled.div`
     width: 200px;
@@ -39,6 +54,10 @@ export const Button = styled.div`
  margin-top: 30px;
  border-radius: 8px;
  color: white;
+ 
+ @media screen and (max-width: 426px){
+    margin-top: 0px;
+ }
 `
 export const Image = styled.img`
     width: 100%;
@@ -49,26 +68,56 @@ export const Wrapper2 = styled.div`
     display: flex;
     justify-content: center;
     margin-top: 50px;
+
+    @media screen and (max-width: 426px){
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
 `
 export const Card1= styled.div`
     width: 350px;
     display: flex;
-   
     padding: 10px;
     border-right: 1px solid grey;
+
+    @media screen and (max-width: 426px){
+        width: 100%;
+        border: none;
+        margin-top: 40px;
+
+    }
 `
 export const Card2 = styled.div`
     width: 350px;
    
     padding: 10px;
     border-right: 1px solid grey;
+
+    @media screen and (max-width: 426px){
+        width: 100%;
+        border: none;
+
+    }
 `
 export const Card3 = styled.div`
     width: 350px;
     padding: 10px;
+
+    @media screen and (max-width: 426px){
+        width: 100%;
+        border: none;
+
+    }
 `
 export const Img = styled.img`
     width: 100px;
+
+    @media screen and (max-width: 426px){
+        display: none;
+    }
 `
 export const Rit = styled.div`
     width: 300px;

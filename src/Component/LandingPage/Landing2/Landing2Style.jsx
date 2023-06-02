@@ -13,6 +13,7 @@ export const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
 `
 export const H1 = styled.div`
   font-size: 30px;
@@ -31,6 +32,13 @@ export const Wrapper2 = styled.div`
    gap: 20px;
    margin-top: 30px;
 
+
+  @media screen and (max-width: 426px){
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
 `
 export const Card = styled.div`
  width: 200px;
@@ -42,6 +50,12 @@ export const Card = styled.div`
  flex-direction: column;
    align-items: center;
    justify-content: center;
+
+
+  @media screen and (max-width: 426px){
+    width: 300px;
+ height: 200px;
+  }
 
 `
 export const M = styled.div`
