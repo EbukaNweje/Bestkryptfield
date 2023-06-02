@@ -1,0 +1,45 @@
+.companydrop{
+    position: absolute;
+left: 520px;
+top: 120px;
+width: 200px;
+height: 120px;
+display: flex;
+flex-direction: column;
+padding: 10px;
+justify-content: center;
+border-radius: 10px;
+border: 1px solid rgb(27, 147, 238);
+background-color: white;
+z-index: 10;
+}
+.planningdrop{
+    position: absolute;
+left: 720px;
+top: 120px;
+width: 200px;
+height: 120px;
+display: flex;
+flex-direction: column;
+padding: 10px;
+justify-content: center;
+border-radius: 10px;
+border: 1px solid rgb(27, 147, 238);
+background-color: white;
+z-index: 10;
+}
+.resourcedrop{
+    position: absolute;
+left: 1000px;
+top: 120px;
+width: 200px;
+height: 120px;
+display: flex;
+flex-direction: column;
+padding: 10px;
+justify-content: center;
+border-radius: 10px;
+border: 1px solid rgb(27, 147, 238);
+background-color: white;
+z-index: 10;
+}
