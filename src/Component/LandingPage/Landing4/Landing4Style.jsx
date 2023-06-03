@@ -37,27 +37,30 @@ export const CardHolder = styled.div`
 }
 `
 export const Card1 = styled.div`
-    width: 450px;
+    width: 480px;
     height: 250px;
     /* background-color: red; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-top: 2px solid lightgrey;
+   
     border-right: 2px solid lightgrey;
-    border-left: 2px solid lightgrey;
-    border-bottom: 2px solid lightgrey;
+  
+    
     padding: 10px;
 
 
     @media screen and (max-width: 426px){
         width: 100%;
     height: 250px;
+    border-top: 2px solid lightgrey;
+    border-bottom: 2px solid lightgrey;
+    border-left: 2px solid lightgrey;
 }
 `
 export const Card2= styled.div`
-    width: 450px;
+    width: 480px;
     height: 250px;
     /* background-color: red; */
     display: flex;
@@ -65,22 +68,37 @@ export const Card2= styled.div`
     align-items: center;
     justify-content: center;
     border-right: 2px solid lightgrey;
-    border-left: 2px solid lightgrey;
-    border-bottom: 2px solid lightgrey;
+
     padding: 10px;
+
+    @media screen and (max-width: 426px){
+        width: 100%;
+    height: 250px;
+    /* border-top: 2px solid lightgrey; */
+    border-bottom: 2px solid lightgrey;
+    border-left: 2px solid lightgrey;
+}
 `
 export const Card3 = styled.div`
-    width: 450px;
+    width: 480px;
     height: 250px;
     /* background-color: red; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-right: 2px solid lightgrey;
-    border-left: 2px solid lightgrey;
-    border-bottom: 2px solid lightgrey;
     padding: 10px;
+
+
+
+    @media screen and (max-width: 426px){
+        width: 100%;
+    height: 250px;
+    /* border-top: 2px solid lightgrey; */
+    border-bottom: 2px solid lightgrey;
+    border-left: 2px solid lightgrey;
+    border-right: 2px solid lightgrey;
+}
 `
 
 export const Icon1 = styled(FaPercent)`
