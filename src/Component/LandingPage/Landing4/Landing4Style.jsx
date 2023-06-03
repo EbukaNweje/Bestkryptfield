@@ -33,6 +33,7 @@ export const CardHolder = styled.div`
 @media screen and (max-width: 426px){
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 `
 export const Card1 = styled.div`
@@ -48,6 +49,12 @@ export const Card1 = styled.div`
     border-left: 2px solid lightgrey;
     border-bottom: 2px solid lightgrey;
     padding: 10px;
+
+
+    @media screen and (max-width: 426px){
+        width: 100%;
+    height: 250px;
+}
 `
 export const Card2= styled.div`
     width: 450px;

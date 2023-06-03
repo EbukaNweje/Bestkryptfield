@@ -15,18 +15,40 @@ export const Body= styled.div`
   align-items: center;
   justify-content: space-between;
   margin-top: 50px;
+
+  @media screen and (max-width: 426px){
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 `
 export const Header= styled.div`
   display: flex;
   justify-content: space-between;
+
+
+  @media screen and (max-width: 426px){
+    display: flex;
+    text-align: center;
+  }
 `
 export const H1= styled.div`
   font-size: 30px;
   color: #012c6d;
   font-weight: bold;
+
+  @media screen and (max-width: 426px){
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 `
 export const Image= styled.div`
-  
+  @media screen and (max-width: 426px){
+    display: none;
+  }
 `
 export const Imag= styled.img`
   

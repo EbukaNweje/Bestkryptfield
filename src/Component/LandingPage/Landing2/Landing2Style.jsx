@@ -13,16 +13,36 @@ export const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @media screen and (max-width: 426px){
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
 `
 export const H1 = styled.div`
   font-size: 30px;
   color: #012C6D;
   margin-top: 30px;
+
+  @media screen and (max-width: 426px){
+    width: 100%;
+    margin-left: 30px;
+    font-size: 20px;
+    text-align: center;
+  }
 `
 export const P = styled.div`
   font-size: 18px;
   margin-top: 10px;
+
+  @media screen and (max-width: 426px){
+    width: 100%;
+    margin-left: 30px;
+    font-size: 15px;
+    text-align: center;
+  }
 `
 export const Wrapper2 = styled.div`
    width: 100%;
@@ -53,7 +73,7 @@ export const Card = styled.div`
 
 
   @media screen and (max-width: 426px){
-    width: 300px;
+    width: 400px;
  height: 200px;
   }
 

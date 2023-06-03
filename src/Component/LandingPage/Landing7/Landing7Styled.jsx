@@ -22,6 +22,12 @@ export const CardHolder = styled.div`
     align-items: center;
     justify-content: center;
     gap: 20px;
+
+    @media screen and (max-width:426px){
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
 `
 export const Card = styled.div`
     width: 400px;

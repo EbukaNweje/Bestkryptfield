@@ -45,6 +45,11 @@ display: flex;
 justify-content: space-around;
 margin: 45px 0 15px 0;
 
+@media screen and (max-width: 426px){
+    display: flex;
+    width: 100%;
+  }
+
 
 @media Screen and (max-width: 768px){
     flex-wrap: wrap;
@@ -113,9 +118,13 @@ a{
     }
 }
 
-@media Screen and (max-width: 425px){
+@media screen and (max-width: 426px){
+    /* display: flex;
+    flex-direction: row;
+    width: 90%; */
     font-size: 13px;
-}
+
+  }
 `;
 export const Line4 = styled.div`
 width: 45%;
@@ -173,10 +182,13 @@ font-size: 16px;
     }
 `;
 export const Image = styled.div`
-    
+  
 `
 export const Imag = styled.img`
     width: 200px;
+    @media screen and (max-width: 426px){
+    width: 150px;
+  }
 `
 export const Footer2=styled.div`
    width :90% ;

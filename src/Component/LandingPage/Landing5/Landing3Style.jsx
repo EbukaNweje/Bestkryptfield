@@ -25,6 +25,11 @@ export const Wrapper = styled.div`
     background-color: #F6F7F8;
     border-radius: 10px;
     /* padding: 10px; */
+
+    @media screen and (max-width: 426px){
+        width:100%;
+    height: 300px; 
+    }
 `
 export const Right = styled.div`
    width :50% ;
@@ -62,6 +67,10 @@ export const Button = styled.div`
 export const Image = styled.img`
     width: 100%;
     height: 100%;
+
+    @media screen and (max-width: 426px){
+        display: none;
+    }
 `
 export const Wrapper2 = styled.div`
     width: 90%;
