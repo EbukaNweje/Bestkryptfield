@@ -40,14 +40,16 @@ height: auto;
 display: flex;
 flex-direction: column;
 /* background-color: red; */
+@media screen and (max-width: 426px){
+    width: 90%;
+}
 
 `;
 
 const Wrap = styled.div`
 width: 100%;
-width: 97%;
+width: 100%;
 height: auto;
-padding: 40px 0px 40px 30px;
 border: 1px solid #111D32;
 border-radius: 0.6rem;
 /* background-color: #012C6D; */
@@ -55,15 +57,15 @@ background-color: white;
 display: flex;
 justify-content: space-between;
 align-items: center;
-/* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
 
 
-@media Screen and (max-width: 768px){
+@media Screen and (max-width: 426px){
     flex-direction: column;
     align-items: flex-start;
     padding-right: 50px;
     padding: 60px 10px;
     width: 100%;
+    margin-left: -10px;
 
 }
 `;
