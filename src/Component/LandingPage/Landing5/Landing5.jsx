@@ -14,10 +14,7 @@ const Landing5 = () => {
                         },
                     }}>LONG-TERM ASSETS</h1>
                     <p style={{
-                        color: "grey", fontSize: "20px", '@media (max-width: 426px)': {
-                            fontSize: '10px',
-                            color: 'red',
-                        },
+                        color: "grey", fontSize: "20px",
                     }}>We operate long-term assets and businesses across the globe. This approach dictates both our investment strategy and our commitment to environmental, social and governance (ESG) practices.</p>
                     <Button>More Insights</Button>
                 </Right>

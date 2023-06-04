@@ -3,7 +3,7 @@
 left: 520px;
 top: 120px;
 width: 200px;
-height: 120px;
+height: auto;
 display: flex;
 flex-direction: column;
 padding: 10px;
@@ -12,13 +12,19 @@ border-radius: 10px;
 border: 1px solid rgb(27, 147, 238);
 background-color: white;
 z-index: 10;
+}
+.companydrop p{
+    cursor: pointer;
+}
+.companydrop p:hover{
+    color: rgb(27, 147, 238);
 }
 .planningdrop{
     position: absolute;
 left: 720px;
 top: 120px;
 width: 200px;
-height: 120px;
+height: auto;
 display: flex;
 flex-direction: column;
 padding: 10px;
@@ -28,12 +34,18 @@ border: 1px solid rgb(27, 147, 238);
 background-color: white;
 z-index: 10;
 }
+.planningdrop p{
+    cursor: pointer;
+}
+.planningdrop p:hover{
+    color: rgb(27, 147, 238); 
+}
 .resourcedrop{
     position: absolute;
 left: 1000px;
 top: 120px;
 width: 200px;
-height: 120px;
+height: auto;
 display: flex;
 flex-direction: column;
 padding: 10px;
@@ -42,4 +54,10 @@ border-radius: 10px;
 border: 1px solid rgb(27, 147, 238);
 background-color: white;
 z-index: 10;
+}
+.resourcedrop p{
+    cursor: pointer;
+}
+.resourcedrop p:hover{
+    color: rgb(27, 147, 238); 
 }

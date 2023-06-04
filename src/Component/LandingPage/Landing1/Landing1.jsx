@@ -123,7 +123,7 @@ width: 400px;
 
     font-family: sans-serif;
     font-weight: bolder;
-    margin-left: -40px;
+   
     @media screen and (max-width: 426px){
       display: flex;
       text-align: center;
@@ -132,6 +132,7 @@ width: 400px;
       justify-content: center;
       margin-right: 10px;
     font-family: sans-serif;
+    margin-left: -40px;
     }
   }
 `

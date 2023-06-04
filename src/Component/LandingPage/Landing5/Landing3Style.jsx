@@ -35,7 +35,13 @@ export const Right = styled.div`
    width :50% ;
    padding: 10px;
    margin-left: 20px;
+p{
+    font-family:
+"Roboto"
+Arial
+sans-serif
 
+}
    @media screen and (max-width: 426px){
         width: 100%;
     }

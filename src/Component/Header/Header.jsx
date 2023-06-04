@@ -22,9 +22,12 @@ const Header = () => {
         <>
             {planning && (
                 <div className='planningdrop' onMouseLeave={() => { setPlanning(!planning) }}>
-                    <p>Abou</p>
-                    <p>Blo</p>
-                    <p>Caree</p>
+                    <p>Financial Planning</p>
+                    <p>Private wealth management</p>
+                    <p>Estate Planning</p>
+                    <p>Long Term Care</p>
+                    <p>Business Plan</p>
+                    <p>Oil & gas</p>
                 </div>
             )}
         </>
@@ -33,9 +36,10 @@ const Header = () => {
         <>
             {resources && (
                 <div className='resourcedrop' onMouseLeave={() => { setRosources(!resources) }}>
-                    <p>Abo</p>
-                    <p>Bl</p>
-                    <p>Care</p>
+                    <p>Help Center</p>
+                    <p>Testimonial</p>
+                    <p>Report</p>
+                    <p>Legal Docs</p>
                 </div>
             )}
         </>

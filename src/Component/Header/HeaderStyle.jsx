@@ -109,7 +109,7 @@ export const PlanningHold= styled.div`
     justify-content: center;
 `
 export const Ic = styled(MdKeyboardArrowDown)`
-    
+    cursor: pointer;
 `;
 export const Img= styled.img`
     width: 200px;

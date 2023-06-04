@@ -49,7 +49,7 @@ flex-direction: column;
 const Wrap = styled.div`
 width: 100%;
 width: 100%;
-height: auto;
+height: 100px;
 border: 1px solid #111D32;
 border-radius: 0.6rem;
 /* background-color: #012C6D; */
@@ -57,6 +57,7 @@ background-color: white;
 display: flex;
 justify-content: space-between;
 align-items: center;
+padding: 10px;
 
 
 @media Screen and (max-width: 426px){
