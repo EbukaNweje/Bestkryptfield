@@ -1,8 +1,9 @@
 import React from 'react'
-import { Container, Img, Left, Right, Wrapper, H1, Card, Span, Span2, Input, Label, Button, PassWordText, Form, SpinnerCircular,RightWrap } from './LoginStyle'
+import { Container, Img, Left, Right, Wrapper, H1, Card, Span, Span2, Input, Label, Button, PassWordText, Form, SpinnerCircular, RightWrap, InputHold } from './LoginStyle'
 import LoginImg from "./Login.jpg"
 import { MdEmail } from 'react-icons/md'
 import { BsFillLockFill } from 'react-icons/bs'
+import { FaUserAlt, FaLock } from "react-icons/fa";
 // import { SpinnerCircular } from 'spinners-react';
 const Login = () => {
 
@@ -16,20 +17,20 @@ const Login = () => {
                 <Right>
                     <RightWrap>
                         <H1>
-
-                            <h1>Login into Your Account</h1>
-                            <p>Don't have an account here? login here </p>
+                            <h1>Log into Your Account</h1>
+                            <Span>Don't have an account? <Span2 to='/signup'>Sign up</Span2></Span>
                         </H1>
                         <Card>
-                            {/* <H1 style={{ textAlign: "center" }}>Log in to your account</H1> */}
-                            {/* <Span>Don't have an account? <Span2 to='/register'>Sign up</Span2></Span> */}
                             <Form onSubmit={(e) => Login(e)}>
-                                {/* <Label><MdEmail style={{ marginRight: "2%" }} />Username*</Label> */}
-                                <Input type="text" placeholder=' Enter username' />
-
-                                {/* <Label><BsFillLockFill style={{ marginRight: "2%" }} />Password*</Label> */}
-                                <Input type="password" placeholder='Enter password' />
-                                <PassWordText to="/forgotpassword"><span style={{ color: "#FF4D4D", cursor: "pointer", textDecoration: "underline" }}>Forgot your password?</span></PassWordText>
+                                <InputHold>
+                                    <Input type="text" placeholder=' Enter username' />
+                                    <FaUserAlt />
+                                </InputHold>
+                                <InputHold>
+                                    <Input type="password" placeholder='Enter password' />
+                                    <FaLock />
+                                </InputHold>
+                                <PassWordText to="/forgotpassword"><span style={{ color: "lightgray", cursor: "pointer", textDecoration: "underline" }}>Forgot your password?</span></PassWordText>
                                 <Button>{loading ? <SpinnerCircular size={25} thickness={100} speed={100} color="rgba(255, 255, 255, 1)" secondaryColor="rgba(0, 0, 0, 0.44)" /> : "Log in"}</Button>
                             </Form>
                         </Card>

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { Link } from "react-router-dom";
 export const Container= styled.div`
     width: 100%;
     height: auto;
@@ -37,6 +37,11 @@ export const H1= styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    h1{
+        margin: 0px;
+        padding: 0px;
+    }
 `
 export const Card= styled.div`
     width: 100%;
@@ -44,19 +49,29 @@ export const Card= styled.div`
 `
 
 export const Span= styled.div`
-    
+    color: lightgrey;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+margin-top: 10px;
+margin-bottom: 10px;
 `
 export const Input= styled.input`
-   width :300px ;
-   height: 40px;
+   width :200px ;
+   height: 20px;
    border-radius: 8px;
-   border: 1px solid lightgray;
+   border: none;
    background-color: transparent;
    padding: 10px;
    outline: none;
 `
-export const Span2= styled.div`
-    
+export const Span2 =styled(Link)`
+    margin-left: 5px;
+    color: #4184DD;
+    cursor: pointer;
+    text-decoration: none;
+
 `
 export const Label= styled.div`
      color: rgb(255, 255, 255);
@@ -81,12 +96,17 @@ export const Button= styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40px;
+    height: 30px;
     width: 280px;
     cursor: pointer;
 `
 export const PassWordText= styled.div`
-    
+width: 60%;
+display: flex;
+justify-content: flex-end;
+   span{
+    text-align: right;
+   } 
 `
 export const Form= styled.div`
     width: 100%;
@@ -102,4 +122,16 @@ export const SpinnerCircular= styled.div`
 export const RightWrap = styled.div`
     width: 100%;
     height: 60%;
+`
+export const InputHold =styled.div`
+     width :300px ;
+   height: 40px;
+   border-radius: 8px;
+   border: 1px solid lightgray;
+   background-color: transparent;
+   padding: 10px;
+   outline: none;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 `
