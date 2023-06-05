@@ -4,7 +4,7 @@ import {
     Col2, Col3, Image, Imag,Footer2,Cryp
     //  Line4, P, Input, Button, H2
 } from './FooterStyle';
-import Logo from "./Logo.jpeg"
+import Logo from "./NewLogo.jpeg"
 import ScrollToTop from "react-scroll-to-top";
 // import Footer2 from "../Footer/Footer"
 
