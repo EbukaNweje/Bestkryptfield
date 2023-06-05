@@ -66,7 +66,7 @@ const StyledSlider = styled(Slider)`
 
 const SlideItem = styled.div`
     width: 100%;
-    height: 400px;
+    height: 300px;
     display: flex;
   justify-content: center;
   align-items: center;
@@ -84,7 +84,7 @@ border-radius: 10px;
 `;
 const SlideItem2 = styled.div`
     width: 100%;
-    height: 400px;
+    height: 300px;
     display: flex;
   justify-content: center;
   align-items: center;
@@ -106,13 +106,14 @@ const Line = styled.div`
    margin-top: 40px;
 `
 const H1 = styled.div`
-width: 400px;
+width: 300px;
   height: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   /* align-items: center; */
   padding: 10px;
+  text-align: center;
 
   p{
     @media screen and (max-width: 426px){
@@ -125,14 +126,14 @@ width: 400px;
     font-weight: bolder;
     font-size: 40px;
     @media screen and (max-width: 426px){
+      width: 300px;
       display: flex;
-      text-align: center;
       height: 100%;
       align-items: center;
       justify-content: center;
-      margin-right: 10px;
     font-family: sans-serif;
-    margin-left: -50px;
+    text-align: center;
+   
     }
   }
 `

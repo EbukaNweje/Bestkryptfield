@@ -2,13 +2,15 @@ import React, { useState } from 'react'
 import { Container, Wrapper, TopHeader,Img, DownHeader, Button,BurgerWrap, Button1, Line, Image, H1, NavHold, CompanyHold,D, PlanningHold,RosourcesHold,Ic } from './HeaderStyle'
 import "../../App.css"
 import Logo from "./NewLogo.jpeg"
-// import { useNavigate } from 'react-router'
+import { useNavigate } from 'react-router'
 import { FiMenu } from "react-icons/fi";
+import { FaTimes } from "react-icons/fa";
 const Header = () => {
-    // const navigate= useNavigate()
+    const navigate= useNavigate()
     const [company, setCompany] = useState(false)
     const [planning, setPlanning] = useState(false)
     const [resources, setRosources] = useState(false)
+    const [burger, setBurger] =useState(false)
 
     const CompanyDrop = (
         <>
@@ -48,6 +50,26 @@ const Header = () => {
         </>
     )
 
+    const BurgerMenu = (
+        <>
+            {burger && (
+                <div className='Burgermenu'>
+                    {/* <p>Sign Up</p> */}
+                    <div className='icondiv'>
+                    <FaTimes className='icon' onClick={()=>{setBurger(!burger)}}/>
+                    </div>
+                    <p>Home</p>
+                    <p>Market</p>
+                    <p>Company</p>
+                    <p>Planning services</p>
+                    <p>Education</p>
+                    <p>Resources</p>
+                    <button onClick={() => navigate("/login")} >Login</button>
+                </div>
+            )}
+        </>
+    )
+    
     return (
         <Container>
             <Wrapper>
@@ -61,7 +83,10 @@ const Header = () => {
                         <Img src={Logo}/>
                     </Image>
                     <BurgerWrap>
-                        <FiMenu style={{fontSize: "40px"}}/>
+                       {
+                        burger ?  <FaTimes style={{fontSize: "40px"}} onClick={()=>{setBurger(!burger)}}/>:  <FiMenu style={{fontSize: "40px"}}  onClick={()=>{setBurger(!burger)}}/>
+                       }
+                       {burger && BurgerMenu}
                     </BurgerWrap>
                     <NavHold>
                         <H1>Home</H1>
