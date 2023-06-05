@@ -2,7 +2,9 @@ import React, { useState } from 'react'
 import { Container, Wrapper, TopHeader,Img, DownHeader, Button, Button1, Line, Image, H1, NavHold, CompanyHold,D, PlanningHold,RosourcesHold,Ic } from './HeaderStyle'
 import "../../App.css"
 import Logo from "./Logo.jpeg"
+// import { useNavigate } from 'react-router'
 const Header = () => {
+    // const navigate= useNavigate()
     const [company, setCompany] = useState(false)
     const [planning, setPlanning] = useState(false)
     const [resources, setRosources] = useState(false)
@@ -49,7 +51,7 @@ const Header = () => {
         <Container>
             <Wrapper>
                 <TopHeader>
-                    <Button>login</Button>
+                    <Button to="/login">login</Button>
                     <Button1>create account</Button1>
                 </TopHeader>
                 <Line></Line>

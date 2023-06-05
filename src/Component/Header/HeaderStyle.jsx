@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { MdKeyboardArrowDown } from "react-icons/md";
-
+import { Link } from "react-router-dom";
 export const Container = styled.div`
    width :100% ;
    display: flex;
@@ -32,7 +32,7 @@ export const TopHeader = styled.div`
     justify-content: right;
     gap: 10px;
 `
-export const Button = styled.div`
+export const Button = styled(Link)`
     width: 100px;
     height: 30px;
     border: 1px solid lightgray;
@@ -43,7 +43,7 @@ export const Button = styled.div`
     color: lightgrey;
     cursor: pointer;
 `
-export const Button1 = styled.div`
+export const Button1 = styled(Link)`
     width: 150px;
     height: 30px;
     border: 1px solid lightgray;
