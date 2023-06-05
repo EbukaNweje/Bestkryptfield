@@ -52,7 +52,7 @@ const Header = () => {
             <Wrapper>
                 <TopHeader>
                     <Button to="/login">login</Button>
-                    <Button1>create account</Button1>
+                    <Button1 to="/signup">create account</Button1>
                 </TopHeader>
                 <Line></Line>
                 <DownHeader>

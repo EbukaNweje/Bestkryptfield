@@ -21,9 +21,19 @@ export const Right= styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media screen and (max-width: 426px){
+        display: flex;
+        width: 100%;
+      }
 `
 export const Left= styled.div`
     width: 60%;
+
+    @media screen and (max-width: 426px){
+        display: none;
+        /* width: 100%; */
+      }
 
 `
 export const Img= styled.img`
@@ -39,6 +49,8 @@ export const H1= styled.div`
     align-items: center;
 
     h1{
+        font-family: sans-serif;
+        font-weight: 100;
         margin: 0px;
         padding: 0px;
     }
