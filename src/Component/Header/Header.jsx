@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
-import { Container, Wrapper, TopHeader,Img, DownHeader, Button, Button1, Line, Image, H1, NavHold, CompanyHold,D, PlanningHold,RosourcesHold,Ic } from './HeaderStyle'
+import { Container, Wrapper, TopHeader,Img, DownHeader, Button,BurgerWrap, Button1, Line, Image, H1, NavHold, CompanyHold,D, PlanningHold,RosourcesHold,Ic } from './HeaderStyle'
 import "../../App.css"
-import Logo from "./Logo.jpeg"
+import Logo from "./NewLogo.jpeg"
 // import { useNavigate } from 'react-router'
+import { FiMenu } from "react-icons/fi";
 const Header = () => {
     // const navigate= useNavigate()
     const [company, setCompany] = useState(false)
@@ -59,6 +60,9 @@ const Header = () => {
                     <Image>
                         <Img src={Logo}/>
                     </Image>
+                    <BurgerWrap>
+                        <FiMenu style={{fontSize: "40px"}}/>
+                    </BurgerWrap>
                     <NavHold>
                         <H1>Home</H1>
                         <H1>Market</H1>

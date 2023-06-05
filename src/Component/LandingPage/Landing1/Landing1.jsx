@@ -23,7 +23,7 @@ const Landing1 = () => {
       <StyledSlider {...settings}>
         <SlideItem>
           <H2>
-            <h1 style={{ fontSize: "35px",fontFamily:
+            <h1 style={{ fontFamily:
 "sans-seri" }}>
               VALUE INVESTING REDEFINED</h1>
             <p style={{ fontSize: "25px", textAlign: "left" }}>At kryptbase-assets.com, we create value by sticking to our consistent investment philosophy and disciplined research process</p>
@@ -31,7 +31,7 @@ const Landing1 = () => {
         </SlideItem>
         <SlideItem2>
           <H1>
-            <h1 style={{ fontSize: "35px", textAlign: "left" }}>Trade your way</h1>
+            <h1 style={{textAlign: "left" }}>Trade your way</h1>
             <p style={{ fontSize: "25px", textAlign: "left" }}>Become the trader you want to be with our next generation platform technology and personal client service.</p>
           </H1>
         </SlideItem2>
@@ -123,7 +123,7 @@ width: 400px;
 
     font-family: sans-serif;
     font-weight: bolder;
-   
+    font-size: 40px;
     @media screen and (max-width: 426px){
       display: flex;
       text-align: center;
@@ -132,7 +132,7 @@ width: 400px;
       justify-content: center;
       margin-right: 10px;
     font-family: sans-serif;
-    margin-left: -40px;
+    margin-left: -50px;
     }
   }
 `
@@ -156,6 +156,7 @@ width: 400px;
     margin-left: -40px;
     font-family: sans-serif;
     font-weight: bolder;
+    font-size: 35px;
     @media screen and (max-width: 426px){
       width: 100%;
       display: flex;

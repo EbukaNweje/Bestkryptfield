@@ -22,6 +22,13 @@ export const DownHeader = styled.div`
     align-items: center;
     justify-content: space-between;
 
+    @media screen and (max-width: 426px){
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        /* background-color: red; */
+    }
+
    
 `
 export const TopHeader = styled.div`
@@ -31,6 +38,9 @@ export const TopHeader = styled.div`
     align-items: center;
     justify-content: right;
     gap: 10px;
+    @media screen and (max-width: 426px){
+        display: none;
+    }
 `
 export const Button = styled(Link)`
     width: 100px;
@@ -42,6 +52,10 @@ export const Button = styled(Link)`
     justify-content: center;
     color: lightgrey;
     cursor: pointer;
+
+    @media screen and (max-width: 426px){
+        display: none;
+    }
 `
 export const Button1 = styled(Link)`
     width: 150px;
@@ -54,12 +68,20 @@ export const Button1 = styled(Link)`
     background-color: lightgray;
     color: #ffffff;
     cursor: pointer;
+
+    @media screen and (max-width: 426px){
+        display: none;
+    }
 `
 export const Line = styled.div`
    width :100% ;
    height: 3px;
    background-color: lightgray;
    margin-top: 5px;
+
+   @media screen and (max-width: 426px){
+        display: none;
+    }
 `
 export const H1 = styled.div`
     
@@ -75,8 +97,8 @@ export const Image = styled.div`
     font-weight: bold;
     cursor: pointer;
 
-    @media screen and (max-width: 960px){
-        width: 100%;
+    @media screen and (max-width: 426px){
+        width: 50%;
         
     }
 `
@@ -113,4 +135,22 @@ export const Ic = styled(MdKeyboardArrowDown)`
 `;
 export const Img= styled.img`
     width: 200px;
+    @media screen and (max-width: 426px){
+        width: 200px;
+    }
+`
+export const BurgerWrap = styled.div`
+    display: none;
+
+    @media screen and (max-width: 426px){
+        
+        display: flex;
+        width: 50%;
+        /* background-color: green; */
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 10px;
+        margin-right: 10px;
+    }
 `
