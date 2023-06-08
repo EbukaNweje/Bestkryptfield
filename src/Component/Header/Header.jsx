@@ -98,8 +98,8 @@ const Header = () => {
                     <div className='icondiv'>
                     <FaTimes className='icon' onClick={()=>{setBurger(!burger)}}/>
                     </div>
-                    <p>Home</p>
-                    <p>Market</p>
+                    <p >Home</p>
+                    <p >Market</p>
                    <div className='companymobile'>
                    <p>Company</p>
                    {companyMobile ? <MdArrowBackIos  onClick={()=>{setCompanyMobile(!companyMobile)}}/> : <MdArrowForwardIos  onClick={()=>{setCompanyMobile(!companyMobile)}}/>}
@@ -141,8 +141,8 @@ const Header = () => {
                        {burger && BurgerMenu}
                     </BurgerWrap>
                     <NavHold>
-                        <H1>Home</H1>
-                        <H1>Market</H1>
+                        <H1 to="/" >Home</H1>
+                        <H1 to="/market" >Market</H1>
                         <CompanyHold>
                             <H1>Company</H1>
                             {company ?  <Ic /> :<Ic onMouseEnter={() => { setCompany(!company) }}/> }     

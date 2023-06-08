@@ -83,8 +83,13 @@ export const Line = styled.div`
         display: none;
     }
 `
-export const H1 = styled.div`
-    
+export const H1 = styled(Link)`
+    cursor: pointer;
+  text-decoration: none;
+  color: inheritw;
+    :hover{
+        color: rgb(27, 147, 238); 
+    }
 `
 export const Image = styled.div`
     width: 15%;
